@@ -18,21 +18,21 @@ bool RG::Homework1::assignment3()
     // Suurenda muutuja i1 väärtust 1 võrra kolmel erineval viisil
     ++i1;
     i1 = i1 +1;
-    i1++;
+    i1 += 1;
 
     // Eemalda muutuja i2 väärtusest i1 väärtus
-    i2 = i2+i1;
+    i2 = i2-i1;
     // Liida muutuja d väärtusele 0.3l ja jagada seejärel i1 väärtusega
-    d= (d+0.3)/i1;
+    d= (d+0.3l)/i1;
     // Liida c väärtusele i1 väärtus
-    c = u8'c';
+    c += i1;
     // Liida s väärtusele c väärtus
-    s = s+u8'g';
+    s += c;
     // Korruta (*=) muutuja v.at(1) väärtus v.at(2) väärtusega, mis on suurendatud ++-ga
-    v.at(1) *= v.at(2)++;
+    v.at(1) *= ++v.at(2);
     // Liida muutujale a.at(2) väärtus v.at(3) väärtusega, siis korruta i1 väärtusega, 
     // seejärel lahuta i2 väärtusega, seejärel jaga v.at(4) väärtusega
-    a.at(2)= ((a.at(2)+v.at(3))*i1-11)/v.at(4);
+    a.at(2)= ((a.at(2)+v.at(3))*i1-i2)/v.at(4);
     // Kontroll, et muutujad on õiget tüüpi ja väärtusega
     return (i1 == 3)
     && (i2 == 8ll)
